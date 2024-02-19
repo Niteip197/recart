@@ -1,0 +1,45 @@
+#servicesInfo{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 3;
+}
+
+#servicesInfoHolder{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1080px;
+  width: 1920px;
+  clip-path: url(#servicesInfoMask);
+}
+
+#servicesTextHolder{
+  position: absolute;
+  width: 1200px;
+  height: 750px;
+  top: 220px;
+  left: 450px;
+  padding: 15px;
+  z-index: 1;
+}
+
+#servicesMask{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1080px;
+  width: 1920px;
+}
+
+#servicesBackground{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1080px;
+  width: 1920px;
+  background: radial-gradient( circle at 444px 917px, #3e4754, #3e475451 15%, #3e475400 70%);
+  clip-path: url(#servicesBackgroundMask);
+}

@@ -1,0 +1,115 @@
+#introHolder {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  opacity: 1;
+  user-select: none;
+  z-index: 1;
+  overflow: hidden;
+  transition: opacity 1s ease-in-out;
+}
+
+#introRotationHolder{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 1920px;
+  height: 1080px;
+  user-select: none;
+  transform-origin: 345px 893px;
+  transition: all 1.5s cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+#textMaskHolder{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1080px;
+  width: 1920px;
+}
+
+#textHolder{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1080px;
+  width: 1920px;
+  /* background-color: rgba(0, 0, 255, 0.366); */
+  clip-path: url(#textMask);
+}
+
+#introT1{
+  position: absolute;
+  bottom: 170px;
+  left: 100px;
+  opacity: 1;
+  transform-origin: 0 0;
+  transform: scale(100%);
+  transition: all 1s cubic-bezier(.36,.27,.11,1);
+}
+
+#introT2{
+  position: absolute;
+  text-align: right;
+  bottom: 100px;
+  left: 600px;
+  opacity: 1;
+  transform-origin: 0% 0%;
+  transform: scale(100%);
+  transition: all 1s cubic-bezier(.36,.27,.11,1);
+}
+
+#introT3{
+  position: absolute;
+  text-align: right;
+  bottom: 100px;
+  left: 600px;
+  opacity: 1;
+  transform-origin: 0% 0%;
+  transform: scale(100%);
+  transition: all 1s cubic-bezier(.36,.27,.11,1);
+}
+
+#introT4{
+  position: absolute;
+  text-align: right;
+  bottom: 100px;
+  left: 600px;
+  transform-origin: 0% 0%;
+  transform: scale(100%);
+  transition: all 1s cubic-bezier(.36,.27,.11,1);
+}
+
+#introT5{
+  position: absolute;
+  text-align: right;
+  bottom: 100px;
+  left: 600px;
+  transform-origin: 0% 0%;
+  transform: scale(100%);
+  transition: all 1s cubic-bezier(.36,.27,.11,1);
+}
+
+.mask{
+  stroke: none;
+  fill: rgba(240, 255, 255, 0.198);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1080px;
+  width: 1920px;
+}
+
+.orange {
+  color: #ef7610;
+}
+
+.introText p {
+  font-family: 'Cocogoose Regular';
+  -webkit-font-smoothing: antialiased;
+  font-smooth: antialiased;
+  margin: 0px;
+  font-size: 34px;
+  text-transform: uppercase;
+  color: #d0c6afbb;
+}

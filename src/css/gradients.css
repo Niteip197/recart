@@ -1,0 +1,32 @@
+#gradients{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  user-select: none;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.gradientMask {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  /* background: linear-gradient(0deg, red 85%, blue 95%, blue); */
+  background: linear-gradient(0deg, #11110f00 85%, #11110f 95%, #11110f);
+}
+
+.gradientMaskOff {
+  position: absolute;
+  bottom: 0;
+  height: 1080px;
+  width: 100vw;
+  background: linear-gradient(0deg, #11110f00 85%, #11110f 95%, #11110f);
+}
+
+.leftGradientMask {
+  position: absolute;
+  left: 0;
+  height: 100vh;
+  width: 1920px;
+  background: linear-gradient(90deg, #11110f00 85%, #11110f 95%, #11110f);
+}

@@ -1,0 +1,318 @@
+#navigationHolder{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  user-select: none;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.lineHolder{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 1920px;
+  height: 1080px;
+  user-select: none;
+  transition: transform 1.5s cubic-bezier(0.87, 0, 0.13, 1);
+  pointer-events: none;
+}
+
+#aboutHolder{
+  transform-origin: 285px 893px;
+  z-index: 4;
+}
+
+#portfolioHolder{
+  transform-origin: 345px 933px;
+  z-index: 4;
+}
+
+#servicesHolder{
+  transform-origin: 405px 933px;
+}
+
+#servicesHolder2{
+  z-index: 4;
+}
+
+#contactsHolder{
+  transform-origin: 465px 933px;
+}
+
+#contactsHolder2{
+  z-index: 4;
+}
+
+.button{
+  position: absolute;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  bottom: 160px;
+  transform-origin: 0% 50%;
+  transform: rotate(-45deg) scale(100%);
+  filter: blur(3px);
+  pointer-events: all;
+  transition: all .25s ease-in-out;
+}
+
+#aboutButton{
+  width: 92px;
+  left: 304.39px;
+}
+
+#portfolioButton{
+  opacity: 0;
+  width: 140px;
+  left: 364.39px;
+}
+
+#servicesButton{
+  opacity: 0;
+  width: 120px;
+  left: 424.39px;
+  z-index: 4;
+}
+
+#contactsButton{
+  opacity: 0;
+  width: 129px;
+  left: 484.39px;
+}
+
+/* ANIMATIONS */
+
+/* ABOUT */
+
+.revealAbout {
+  animation:
+    about_1 1.2s forwards cubic-bezier(.64,.01,.28,.96),
+    .5s about_2 1.3s forwards cubic-bezier(.43,.04,.15,1.19),
+    .8s about_3 1.8s forwards cubic-bezier(.77,.03,.47,.99),
+    .8s about_4 2.6s forwards cubic-bezier(.7,.01,.17,.98);
+}
+
+@keyframes about_1{
+  from{
+    opacity: 0;
+    filter: blur(0px);
+    left: calc(50vw - 46px);
+    bottom: 500px;
+    transform: rotate(0deg)
+  }
+  to{
+    opacity: 1;
+    filter: blur(0px);
+    left: calc(50vw - 46px);
+    bottom: 500px;
+    transform: rotate(0deg)
+  }
+}
+
+@keyframes about_2{
+  from{
+    transform: rotate(0deg)
+  }
+  to{
+    transform: rotate(-45deg)
+  }
+}
+
+@keyframes about_3{
+  from{
+    left: calc(50vw - 46px);
+  }
+  to{
+    left: 645px;
+  }
+}
+
+@keyframes about_4{
+  from{
+    left: 645px;
+    bottom: 500px;
+    filter: blur(0px);
+  }
+  to{
+    left: 304.39px;
+    bottom: 160px;
+    filter: blur(3px);
+  }
+}
+
+/* PORTFOLIO */
+
+.revealPortfolio {
+  animation:
+    1.2s portfolio_1 .1s forwards cubic-bezier(.64,.01,.28,.96),
+    .5s portfolio_2 1.4s forwards cubic-bezier(.43,.04,.15,1.19),
+    .8s portfolio_3 1.9s forwards cubic-bezier(.77,.03,.47,.99),
+    .8s portfolio_4 2.7s forwards cubic-bezier(.7,.01,.17,.98);
+}
+
+@keyframes portfolio_1{
+  from{
+    opacity: 0;
+    filter: blur(0px);
+    left: calc(50vw - 36px);
+    bottom: 470px;
+    transform: rotate(0deg)
+  }
+  to{
+    opacity: 1;
+    filter: blur(0px);
+    left: calc(50vw - 36px);
+    bottom: 470px;
+    transform: rotate(0deg)
+  }
+}
+
+@keyframes portfolio_2{
+  from{
+    transform: rotate(0deg)
+  }
+  to{
+    transform: rotate(-45deg)
+  }
+}
+
+@keyframes portfolio_3{
+  from{
+    left: calc(50vw - 36px);
+  }
+  to{
+    left: 675px;
+  }
+}
+
+@keyframes portfolio_4{
+  from{
+    left: 675px;
+    bottom: 470px;
+    filter: blur(0px);
+  }
+  to{
+    left: 364.39px;
+    bottom: 160px;
+    filter: blur(3px);
+  }
+}
+
+/* SERVICES */
+
+.revealServices {
+  animation:
+    1.2s services_1 .2s forwards cubic-bezier(.64,.01,.28,.96),
+    .5s services_2 1.5s forwards cubic-bezier(.43,.04,.15,1.19),
+    .8s services_3 2s forwards cubic-bezier(.77,.03,.47,.99),
+    .8s services_4 2.8s forwards cubic-bezier(.7,.01,.17,.98);
+}
+
+@keyframes services_1{
+  from{
+    opacity: 0;
+    filter: blur(0px);
+    left: calc(50vw - 26px);
+    bottom: 440px;
+    transform: rotate(0deg)
+  }
+  to{
+    opacity: 1;
+    filter: blur(0px);
+    left: calc(50vw - 26px);
+    bottom: 440px;
+    transform: rotate(0deg)
+  }
+}
+
+@keyframes services_2{
+  from{
+    transform: rotate(0deg)
+  }
+  to{
+    transform: rotate(-45deg)
+  }
+}
+
+@keyframes services_3{
+  from{
+    left: calc(50vw - 26px);
+  }
+  to{
+    left: 705px;
+  }
+}
+
+@keyframes services_4{
+  from{
+    left: 705px;
+    bottom: 440px;
+    filter: blur(0px);
+  }
+  to{
+    left: 424.39px;
+    bottom: 160px;
+    filter: blur(3px);
+  }
+}
+
+/* CONTACTS */
+
+.revealContacts {
+  animation:
+    1.2s contacts_1 .3s forwards cubic-bezier(.64,.01,.28,.96),
+    .5s contacts_2 1.6s forwards cubic-bezier(.43,.04,.15,1.19),
+    .8s contacts_3 2.1s forwards cubic-bezier(.77,.03,.47,.99),
+    .8s contacts_4 2.9s forwards cubic-bezier(.7,.01,.17,.98);
+}
+
+@keyframes contacts_1{
+  from{
+    opacity: 0;
+    filter: blur(0px);
+    left: calc(50vw - 16px);
+    bottom: 410px;
+    transform: rotate(0deg)
+  }
+  to{
+    opacity: 1;
+    filter: blur(0px);
+    left: calc(50vw - 16px);
+    bottom: 410px;
+    transform: rotate(0deg)
+  }
+}
+
+@keyframes contacts_2{
+  from{
+    transform: rotate(0deg)
+  }
+  to{
+    transform: rotate(-45deg)
+  }
+}
+
+@keyframes contacts_3{
+  from{
+    left: calc(50vw - 16px)
+  }
+  to{
+    left: 735px
+  }
+}
+
+@keyframes contacts_4{
+  from{
+    left: 735px;
+    bottom: 410px;
+    filter: blur(0px);
+  }
+  to{
+    left: 484.39px;
+    bottom: 160px;
+    filter: blur(3px);
+  }
+}

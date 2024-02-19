@@ -1,0 +1,42 @@
+#loaderHolder{
+  position: absolute;
+  margin: 0px;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  z-index: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.loadingLine {
+  position: absolute;
+  top: 35vh;
+  fill: none;
+  stroke-width: 0.7;
+}
+
+.line1 {
+  stroke: #808285;
+  stroke-dasharray: 40 60;
+  animation: linesLoop 3s linear infinite;
+}
+
+.line2 {
+  stroke: #80828586;
+  stroke-dasharray: 60 40;
+  animation: 3s linesLoop 1.5s linear infinite;
+}
+
+.line3 {
+  stroke: #b1b3b6;
+  stroke-dasharray: 2 98;
+  animation: 1.5s linesLoop 1.9s linear infinite;
+}
+
+@keyframes linesLoop {
+  0% {stroke-dashoffset: 0}
+  100% {stroke-dashoffset: 100}
+}

@@ -1,0 +1,51 @@
+#aboutInfo{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 3;
+}
+
+#aboutInfoHolder{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1080px;
+  width: 1920px;
+  clip-path: url(#aboutInfoMask);
+}
+
+#aboutTextHolder{
+  position: absolute;
+  width: 800px;
+  bottom: 330px;
+  left: 400px;
+  transform: skewX(-5deg);
+  /* background-color: #11110f60; */
+  padding: 10px;
+  z-index: 1;
+}
+
+#aboutTextHolder h1, #aboutTextHolder p {
+  transform: skewX(5deg);
+}
+
+#aboutMask{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1080px;
+  width: 1920px;
+}
+
+#aboutBackground{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1080px;
+  width: 1920px;
+  background: radial-gradient( circle at 285px 893px, #ef7610, #ef741051 15%, #ef741000 70%);
+  /* background-color: #ef7610; */
+  clip-path: url(#aboutBackgroundMask);
+}

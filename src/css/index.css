@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  font-size: 16px;
+  background-color: #11110f;
+}
+
+@font-face {
+  font-family: 'Cocogoose Regular';
+  src: url('../fonts/CocogooseRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Regular';
+  src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Medium';
+  src: url('../fonts/Roboto-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
