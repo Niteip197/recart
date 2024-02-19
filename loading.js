@@ -95,7 +95,7 @@ function introStart(){
   return
 }
 
-// document.addEventListener('mousemove', e => {
-//   console.clear()
-//   console.log( document.elementFromPoint(e.clientX, e.clientY) )
-// }, {passive: true})
+document.addEventListener('mousemove', e => {
+  console.clear()
+  console.log( document.elementFromPoint(e.clientX, e.clientY) )
+}, {passive: true})
